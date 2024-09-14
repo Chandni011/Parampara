@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Parampara</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="myorder">My Order</string>
+    <string name="changepassword">Change Password</string>
+    <string name="aboutus">About us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="Tnc"><![CDATA[T & C]]></string>
+    <string name="pnp"><![CDATA[Privacy & Policy]]></string>
+    <string name="logout">Logout</string>
+    <string name="Sunrise">Sunrise</string>
+    <string name="Sunset">Sunset</string>
+    <string name="Donation">Donation</string>
+    <string name="Temple">Temple Locater</string>
+    <string name="VirtualServices">Virtual Services</string>
+    <string name="DarshanBooking">Darshan Booking</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="ForgotPassword">Forgot Password ?</string>
+    <string name="Signup">Signup</string>
+    <string name="Address">Order Address</string>
+    <string name="flatno">"Flat/ House No. / Floor / Building "</string>
+    <string name="landmark">Landmark</string>
+    <string name="pincode">Pincode</string>
+    <string name="samagri">Do you want samagri for this puja ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="samagramount">Total amount  </string>
+    <string name="Username">Username</string>
+    <string name="facebook_app_id">587484528791606</string>
+    <string name="ResendCode">Resend Code >> </string>
+    <string name="submit">Submit</string>
+    <string name="New_Password">New Password</string>
+    <string name="old_password">Please Enter Old Password</string>
+    <string name="new_password">Please Enter New Password</string>
+    <string name="city">City</string>
+    <string name="state">state</string>
+    <string name="cPassword">Confirm Password</string>
+    <string name="pcost">Pooja Cost</string>
+    <string name="psamagri">Samagri Cost</string>
+    <string name="gst">G.S.T</string>
+    <string name="cfee">Convenience Fee</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="total_quantity">Total Quantity</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="country">Country</string>
+    <string name="my_booking">My Booking</string>
+    <string name="bhavya_ayojana">Bhavya Ayojana</string>
+    <string name="send_password">Send Password</string>
+    <string name="very_long_lorem_ipsum_2">
+        Aliquam eu mauris lectus. Pellentesque lacinia ut urna ut gravida. Proin libero sem, auctor in posuere sit amet, porta a nibh. Vivamus maximus nunc eu urna pellentesque vulputate. Phasellus lacinia ut diam id mattis. Ut fermentum, sem non viverra maximus, elit massa varius dolor, ac elementum mi nunc eu orci. Fusce ornare mi sed dapibus tempus. Quisque sollicitudin condimentum ex vitae imperdiet. Mauris et est non nibh gravida suscipit eget id est.
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis quis elit sed cursus. In commodo malesuada elit. Curabitur eget tortor ipsum. In consequat sollicitudin rhoncus. Donec interdum felis vitae ipsum mattis congue. Suspendisse eget tellus sit amet nunc egestas ultrices. Sed placerat eu arcu vel ullamcorper. Curabitur a dictum odio. Suspendisse fermentum ex vel ullamcorper scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam at nisl orci. Nullam ligula purus, pulvinar vel ligula sodales, tincidunt porttitor enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper tincidunt scelerisque. Praesent mollis magna ut consequat dictum.
+        \n\nDuis in vestibulum dui, non pulvinar tortor. Maecenas finibus nulla purus, ac consectetur erat finibus vitae. Ut eget convallis dolor. Mauris a leo nunc. Nullam facilisis tincidunt odio eget laoreet. Integer sapien ipsum, fringilla id purus et, cursus convallis dolor. Etiam vel lacinia nibh. Donec sollicitudin fermentum eleifend. Vivamus quis mauris in libero vehicula aliquet sit amet quis odio. Etiam et tincidunt turpis, vel iaculis urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam et mollis enim.
+        \n\nPraesent interdum lectus suscipit enim dictum, sed laoreet nisl posuere. Curabitur accumsan tellus ac iaculis fermentum. Curabitur a purus nec nibh porta imperdiet. Vivamus dignissim libero ut mauris rhoncus finibus non at urna. Phasellus a varius elit, a blandit est. Cras sodales tincidunt purus sit amet condimentum. Phasellus consectetur sem nec nisi congue, id gravida risus tristique. Curabitur vulputate convallis purus, vel bibendum nunc ultricies at.
+        \n\nInteger condimentum egestas eros mollis facilisis. Praesent vitae diam ac diam efficitur pretium nec vitae dui. Nunc quam est, porttitor ut dapibus non, sodales id nulla. Mauris facilisis malesuada dapibus. Aliquam erat volutpat. Vivamus vitae consequat mauris, nec dictum erat. Aliquam in consectetur est, sit amet varius risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vulputate dapibus lorem, ut interdum lectus bibendum nec. Suspendisse potenti. Cras elementum cursus nisl, ac pulvinar eros fringilla vitae. Cras ac tortor sagittis diam feugiat tincidunt id at est. Curabitur consequat ante purus. Nunc malesuada scelerisque leo vel efficitur.
+    </string>
+    <string name="sorry">Sorry!</string>
+    <string name="this_features_is_only_for_premium_users">This features is only for premium Users</string>
+    <string name="back">Back</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BhavayAyojan_Booking">
+    <include layout="@layout/lay_header"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_bhavyAyojan"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
+        android:layout_alignParentBottom="true"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/grey_20" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_bhavyAyojan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

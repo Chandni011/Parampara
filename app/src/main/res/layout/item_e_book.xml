@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_sub"
+                android:src="@drawable/mahalaxmipuja" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subname"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_subcatname"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight=".8"
+
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 1500"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/txt_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_margin="10dp"
+
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.2"
+                android:gravity="center|right"
+                >
+                <RelativeLayout
+                    android:id="@+id/rel_addhelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp" >
+
+                    <TextView
+                        android:id="@+id/remove_item"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/decreas"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/iteam_amount"
+                       style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/remove_item"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:inputType="number"
+                        android:minWidth="20dp"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textColorHint="#000" />
+
+                    <TextView
+                        android:id="@+id/add_item"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/iteam_amount"
+                        android:background="@drawable/add"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#ffff"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_orange"
+                android:text="Add To Card"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

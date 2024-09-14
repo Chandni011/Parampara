@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/red_A700"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:iconTint="@color/red_A700"
+            android:title="@string/Profile" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications"
+            android:iconTint="@color/red_A700"
+            android:title="@string/notification" />
+
+
+        <item
+            android:id="@+id/nav_mooking"
+            android:icon="@drawable/ic_book"
+            android:iconTint="@color/red_A700"
+            android:title="@string/my_booking">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_myBooking"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Pooja Booking" />
+
+                <item
+                    android:id="@+id/bhavya_ayojan"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Bhavya Ayojan" />
+
+                <item
+                    android:id="@+id/bhajan_mandal_txt"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Bhajan mandal" />
+
+                <item
+                    android:id="@+id/pramars_txt"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Paramars" />
+
+                <item
+                    android:id="@+id/kundali_request"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Kundali Request" />
+
+                <item
+                    android:id="@+id/daily_pandit"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Daily Pandit" />
+
+                <item
+                    android:id="@+id/donation"
+                    android:icon="@drawable/ic_book"
+                    android:iconTint="@color/red_A700"
+                    android:title="Donation" />
+
+            </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/nav_myorder"
+            android:icon="@drawable/ic_cart"
+            android:iconTint="@color/red_A700"
+            android:title="@string/myorder" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_star"
+            android:iconTint="@color/red_A700"
+            android:title="Rating &amp; Review  " />
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/ic_vpn_key"
+            android:iconTint="@color/red_A700"
+            android:title="@string/changepassword" />
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_info"
+            android:iconTint="@color/red_A700"
+            android:title="@string/aboutus" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_phone"
+            android:iconTint="@color/red_A700"
+            android:title="@string/contactus" />
+
+
+        <item
+            android:id="@+id/nav_tc"
+            android:icon="@drawable/ic_policy"
+            android:iconTint="@color/red_A700"
+            android:title="@string/Tnc" />
+
+        <item
+            android:id="@+id/nav_pp"
+            android:icon="@drawable/ic_policy"
+            android:iconTint="@color/red_A700"
+            android:title="@string/pnp" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power"
+            android:iconTint="@color/red_A700"
+            android:title="@string/logout" />
+    </group>
+</menu>

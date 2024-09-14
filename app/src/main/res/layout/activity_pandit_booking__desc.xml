@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lay_header"
+        layout="@layout/lay_header" />
+
+    <Button
+        android:id="@+id/btn_proceedtobook"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_orange"
+        android:text="Proceed to book"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_proceedtobook"
+        android:layout_below="@+id/lay_header"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/image_pooja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/satyanarayanpuja" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:contentPadding="10dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/row_checkout_bg_color">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prices :"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="With Include Samagri : "
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_withsamgari"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Rs 2100 /-"
+                            android:textStyle="bold"
+                            android:textColor="@color/green" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Without Include Samagri : "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_pricewithout"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Rs 2100 /-"
+                            android:textColor="@color/green"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description :"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txt_poojadesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Satyanarayan Puja is a religious worship of the Hindu god Vishnu. Satya means “truth” and narayana means, “The highest being” so Satyanarayan means “The highest being who is an embodiment of Truth"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

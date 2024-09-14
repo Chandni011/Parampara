@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ambitious.parampara">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.others.Mandal_desc"></activity>
+        <activity android:name=".Activity.others.Ayojan_desc" />
+        <activity android:name=".Activity.others.PrivacyPolici" />
+        <activity android:name=".Activity.others.MyKundali_booking" />
+        <activity android:name=".Activity.others.MyParamarsh_booking" />
+        <activity android:name=".Activity.others.MyDonation_booking" />
+        <activity android:name=".Activity.others.MyDpandit_booking" />
+        <activity android:name=".Activity.others.MyMandal_bokking" />
+        <activity android:name=".Activity.others.MyAyojan_booking" />
+        <activity android:name=".Activity.others.DailyPanditSubsAddressAct" />
+        <activity android:name=".Activity.others.DonationFromAct" />
+        <activity android:name=".Activity.others.DailyPanditListAct" />
+        <activity android:name=".Activity.others.NewPaymentAct" />
+        <activity android:name=".Activity.others.BhavyaAjojanFormAct" />
+        <activity android:name=".Activity.others.MakingKundaliAct" />
+        <activity android:name=".Activity.others.Product_details_Page" />
+        <activity android:name=".Activity.others.MyCart_items" />
+        <activity android:name=".Activity.others.bhavvya_ajojana" />
+        <activity android:name=".Activity.others.Order_details_activity" />
+        <activity android:name=".Activity.others.MyOrders_items" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Activity.others.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activity.others.PoojaDetails_Activity" />
+        <activity android:name=".Activity.others.DarshanBooking_Activity" />
+        <activity android:name=".Activity.others.TempleLocator_Activity" />
+        <activity android:name=".Activity.others.EStoreBookingDetails_Activity" />
+        <activity android:name=".Activity.others.BookingReview_Activity" />
+        <activity android:name=".Activity.others.SubCategory_Activity" />
+        <activity android:name=".Activity.others.PaymentActivity" />
+        <activity android:name=".Activity.others.ChangePassword" />
+        <activity android:name=".Activity.others.ForgotPassword_Activity" />
+        <activity android:name=".Activity.others.Nav_profileActivity" />
+        <activity android:name=".Activity.others.OTPActivity" />
+        <activity android:name=".Activity.others.Payment_mode" />
+        <activity android:name=".Activity.others.BookingDetails_Activity" />
+        <activity android:name=".Activity.poojabooking.MyPooja_Booking" />
+        <activity android:name=".Activity.others.Horoscope_Activity" />
+        <activity android:name=".Activity.others.PujaAtTemple_Activity" />
+        <activity android:name=".Activity.others.Donation_Activity" />
+        <activity android:name=".Activity.others.Bhrambhanbhoj_Activity" />
+        <activity android:name=".Activity.others.VirtualService_Activity" />
+        <activity android:name=".Activity.others.BhajanMandal_Activity" />
+        <activity android:name=".Activity.others.DailyPandit_Activity" />
+        <activity android:name=".Activity.others.PanditBooking_Desc" />
+        <activity android:name=".Activity.others.PanditBooking_Activity" />
+        <activity android:name=".Activity.others.E_Store_Activity" />
+        <activity android:name=".Activity.others.notification" />
+        <activity android:name=".Activity.others.OrderSuccessPayment" />
+        <activity android:name=".Activity.others.BookingSuccesActivity" />
+        <activity android:name=".Activity.others.TermsAndConditionActivity" />
+        <activity android:name=".Activity.others.AboutUsActivity" />
+        <activity
+            android:name=".Activity.others.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.others.ContactUsActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"/>
+<!--                android:resource="@xml/picker_provider_paths" />-->
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+<!--            tools:ignore="ManifestResource" />-->
+        <!--
+        <service android:name=".Service.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>!
+        -->
+        <service
+            android:name=".Service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <receiver
+            android:name=".Service.BroadcastNotiReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.mandal.BhavayAyojan_Booking" />
+        <activity android:name=".Activity.others.LoginMode_Activity" />
+        <activity android:name=".Activity.others.RatingAndReviewFragment" />
+        <activity android:name=".Activity.others.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center"
+    android:padding="10dp"
+    android:id="@+id/layout_root"
+    android:background="@drawable/login_dialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/login_dialog_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/coming_soon"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sorry" />
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#706c6c"
+                android:gravity="center_horizontal"
+                android:id="@+id/text_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No data found!" />
+        </LinearLayout>
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="visible"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/back"
+            android:background="@drawable/buttonn"/>
+    </LinearLayout>
+</RelativeLayout>

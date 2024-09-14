@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+   <include layout="@layout/lay_header"
+       android:id="@+id/rel_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/lay_amount"
+
+        android:layout_below="@+id/rel_header">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/cv_cc"
+            app:cardElevation="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".4"
+                    android:src="@drawable/paytm_logo"
+
+                    />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2.1"
+                    android:gravity="center_vertical"
+                    android:text="Paytm" />
+
+                <ImageView
+                    android:id="@+id/img_cc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight=".5"
+                    android:visibility="gone"
+                    android:src="@drawable/select" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/cc_cash"
+            app:cardElevation="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".4"
+                    android:src="@drawable/cash"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2.1"
+                    android:gravity="center_vertical"
+                    android:text="Cash" />
+
+                <ImageView
+                    android:id="@+id/img_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight=".5"
+                    android:visibility="gone"
+
+                    android:src="@drawable/select" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pay"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/lay_amount"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Amount"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:id="@+id/txt_tot_amount"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/green"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_orange"
+        android:text="Proceed to Pay"
+        android:textAllCaps="false"
+        android:id="@+id/btn_pay"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        style="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+</RelativeLayout>

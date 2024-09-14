@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2.5"
+    tools:context=".Activity.others.BookingReview_Activity"
+    android:orientation="vertical"
+    android:background="@color/row_checkout_bg_color">
+
+    <include layout="@layout/lay_header"
+        android:id="@+id/lay_header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_pooja"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sathiya" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Satyanarayan Pooja"
+                                    android:id="@+id/pname"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/pdate"
+                                    android:maxLines="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorBlack"
+                                    android:text=" Lorem Ipsum has been the industry's standard dummy text" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txt_time"
+                                    android:maxLines="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorBlack"
+                                    android:text=" Lorem Ipsum has been the industry's standard dummy text" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/psamagri"
+                                    android:maxLines="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorBlack"
+                                    android:text=" Lorem Ipsum has been the industry's standard dummy text" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_margin="@dimen/nav_header_vertical_spacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                        android:layout_marginStart="@dimen/nav_header_vertical_spacing">
+                        <TextView
+                            android:textSize="@dimen/tsize"
+                            android:id="@+id/pcost"
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/pcost"
+                            />
+                        <TextView
+                            android:textSize="@dimen/tsize"
+                            android:id="@+id/scost"
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/psamagri"
+                            />
+                        <TextView
+                            android:textSize="@dimen/tsize"
+                            android:id="@+id/gst"
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/gst"
+                            />
+                        <TextView
+                            android:textSize="@dimen/tsize"
+                            android:id="@+id/cfee"
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/cfee"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:contentPadding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:text="Name "
+                            />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:id="@+id/name"
+                            android:text="@string/samagramount" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:text="Mobile "/>
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:id="@+id/number"
+                            android:text="@string/samagramount" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:text="Address "/>
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:id="@+id/flat"
+                            android:text="@string/samagramount"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_finalprice"
+                            android:text="@string/samagramount"/>
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/black"
+                            android:id="@+id/payment_display"
+                            android:text="@string/samagramount"/>
+
+
+                    </LinearLayout>
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2">-->
+<!--                        <TextView-->
+<!--                            android:textSize="@dimen/activity_vertical_margin"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            style="@style/TextAppearance.AppCompat.Small"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:id="@+id/txt_finalprice"-->
+<!--                            android:text="@string/samagramount"/>-->
+<!--                        <TextView-->
+<!--                            android:textSize="@dimen/tesi"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            style="@style/TextAppearance.AppCompat.Small"-->
+<!--                            android:textColor="@color/main_green_color"-->
+<!--                            android:id="@+id/payment_display"/>-->
+
+<!--                    </LinearLayout>-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_orange"
+                android:text="Proceed to Pay"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

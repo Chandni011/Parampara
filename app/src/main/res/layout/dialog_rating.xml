@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_review" />
+
+            <TextView
+                android:id="@+id/titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Rate This User"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Let us know what you think."
+                android:textColor="@color/colorGray"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:gravity="center_horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/rate_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/gray_btn_bg_color" />
+
+                <ImageView
+                    android:id="@+id/rate_2"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/gray_btn_bg_color" />
+
+                <ImageView
+                    android:id="@+id/rate_3"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/gray_btn_bg_color" />
+
+                <ImageView
+                    android:id="@+id/rate_4"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/gray_btn_bg_color" />
+
+                <ImageView
+                    android:id="@+id/rate_5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/gray_btn_bg_color" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/otp_bg"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_height="100dp">
+                <EditText
+                    android:id="@+id/feedback_edt"
+                    android:layout_width="match_parent"
+                    android:hint="feedback"
+                    android:maxLines="5"
+                    android:textSize="14sp"
+                    android:gravity="top"
+                    android:background="@android:color/transparent"
+                    android:maxLength="200"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_orange"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
